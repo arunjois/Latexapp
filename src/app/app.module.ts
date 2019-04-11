@@ -8,18 +8,22 @@ import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatButtonModule,MatCheckboxModule,MatMenuModule,MatSelectModule,MatIconModule,MatToolbarModule} from '@angular/material';
+import {MatButtonModule,MatCheckboxModule,MatMenuModule,
+  MatSelectModule,MatIconModule,MatGridListModule,MatToolbarModule} from '@angular/material';
 import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 
+import {MatTreeModule} from '@angular/material';
 import { CommonModule } from '@angular/common';
-
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import {MenuComponent} from './menu/menu.component';
 import { EditorComponent } from './editor/editor.component';
-import { ViewComponent } from './view/view.component';
+// import { ViewComponent } from './view/view.component';
+import { GridComponent } from './grid/grid.component';
+import {TreeComponent} from './grid/tree/tree.component';
+import {ViewComponent } from './grid/view/view.component';
 
 
 @NgModule({
@@ -27,7 +31,10 @@ import { ViewComponent } from './view/view.component';
     AppComponent,
     MenuComponent,
     ToolsComponent,
-    SectionComponent
+    SectionComponent,
+    GridComponent,
+    TreeComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +46,8 @@ import { ViewComponent } from './view/view.component';
     MatButtonModule,
     MatIconModule,
     MatCheckboxModule,
+    MatGridListModule,
+    MatTreeModule,
     MatToolbarModule,
     CommonModule,
     BsDropdownModule.forRoot(),
