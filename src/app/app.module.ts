@@ -27,12 +27,8 @@ import { ViewComponent } from './view/view.component';
     AppComponent,
     MenuComponent,
     ToolsComponent,
-    SectionComponent,
-    EditorComponent,
-    ViewComponent,
-    
-    
-      ],
+    SectionComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
